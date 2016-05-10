@@ -2,6 +2,8 @@
 
 Very simple random name generator.
 
+Compatible with [browserify](https://www.npmjs.com/package/browserify).
+
 ## Usage
 
 ```js
