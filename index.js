@@ -6,7 +6,12 @@ exports.returnDict = returnDict;
 function choose() {
   var adj = randomWord('adjectives');
   var noun = randomWord('nouns');
-  return adj + '-' + noun;
+  if (adj !== undefined && noun !== undefined) {
+    return adj + '-' + noun;
+  } else {
+    console.log('Epithet Error: returned undefined.');
+    return undefined;
+  }
 }
 
 function randomWord(dict) {
