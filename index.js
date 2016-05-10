@@ -1,4 +1,8 @@
 exports.choose = choose;
+exports.randomWord = randomWord;
+exports.random = random;
+exports.adjectives = adjectives;
+exports.nouns = nouns;
 
 function choose() {
   var adj = randomWord(adjectives);
