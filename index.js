@@ -5,8 +5,8 @@ exports.adjectives = adjectives;
 exports.nouns = nouns;
 
 function choose() {
-  var adj = randomWord(adjectives);
-  var noun = randomWord(nouns);
+  var adj = randomWord('adjectives');
+  var noun = randomWord('nouns');
   return adj + '-' + noun;
 }
 
