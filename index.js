@@ -11,9 +11,11 @@ function choose() {
 
 function randomWord(dict) {
   var words = returnDict(dict);
-  if (words.isArray) {
-    var limit = words.size;
+  if (words !== undefined) {
+    var limit = words.length;
     return words[random(limit)];
+  } else {
+    return undefined
   }
 }
 
