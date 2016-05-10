@@ -28,6 +28,6 @@ Returns an **array** of all the words of a certain type in epithet’s dictionar
 
 An optional argument specifies the word type and can be one of `adjective` or `noun`. If no argument is provided, a type of `noun` is assumed.
 
-## Options
+## Acknowledgements
 
-There are no options.
+Based on [moniker](https://github.com/weaver/moniker/)’s dictionaries.
