@@ -12,9 +12,11 @@ myReallyGreatName = epithet.choose();
 
 ## Methods
 
-### `.choose()`
+### `.choose(opt)`
 
-`epithet.choose()` returns a string in the form of adjective-noun.
+`epithet.choose()` returns a **string** combining an adjective and a noun.
+
+An optional argument specifies the separator between the adjective and the noun. If no argument is provided, a default hyphen is used: `-`.
 
 ### `.randomWord(opt)`
 
