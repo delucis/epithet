@@ -3,11 +3,16 @@ exports.randomWord = randomWord;
 exports.random = random;
 exports.returnDict = returnDict;
 
-function choose() {
+function choose(separator) {
+  if (typeof separator === 'undefined' || separator === null) {
+    var separator = '-';
+  } else if (typeof separator !== 'string') {
+    var separator = separator.toString();
+  }
   var adj = randomWord('adjective');
   var noun = randomWord('noun');
   if (adj !== undefined && noun !== undefined) {
-    return adj + '-' + noun;
+    return adj + separator + noun;
   } else {
     console.log('Epithet Error: returned undefined.');
     return undefined;
