@@ -9,16 +9,17 @@ Compatible with [browserify](https://www.npmjs.com/package/browserify).
 ```js
 var epithet = require('epithet');
 
-myReallyGreatName = epithet.choose();
+firstTitle = epithet.choose(); // firstTitle = 'brilliant-friend';
+secondTitle = epithet.choose('.'); // secondTitle = 'new.name';
 ```
 
 ## Methods
 
 ### `.choose(opt)`
 
-`epithet.choose()` returns a **string** combining an adjective and a noun.
+`epithet.choose()` returns a **string** combining an adjective and a noun joined by a separator, e.g. `lost-child`.
 
-An optional argument specifies the separator between the adjective and the noun. If no argument is provided, a default hyphen is used: `-`.
+An optional argument specifies the separator between the adjective and the noun. If no argument is provided, the default hyphen is used.
 
 ### `.randomWord(opt)`
 
