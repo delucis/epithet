@@ -4,6 +4,15 @@ Very simple random name generator.
 
 Compatible with [browserify](https://www.npmjs.com/package/browserify).
 
+## Installation
+
+```sh
+$ npm install epithet
+```
+Install with the `--save` (or `-S`) flag to add `epithet` to your package’s dependencies.
+
+Install with the `--save-dev` (or `-D`) flag to add `epithet` as a development dependency, for example if you are only bundling it for client-side use with `browserify`.
+
 ## Usage
 
 ```js
